@@ -1,17 +1,27 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Todo List</title>
 </head>
 
 <body>
-    <div>
-        <h1>Todo List</h1>
-        <button>All</button>
-        <button>Active</button>
-        <button>Completed</button>
-        <input type="text" placeholder="What needs to be done?">
-        <button>+</button>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-left">
+                <h1>Todo List</h1>
+            </div>
+            <div class="header-right">
+                <button>All</button>
+                <button>Active</button>
+                <button>Completed</button>
+            </div>
+        </div>
+
+        <div>
+            <input type="text" placeholder="What needs to be done?">
+            <button>+</button>
+        </div>
 
         <ul>
             <li>
@@ -29,14 +39,19 @@
                 <span>Laundry</span>
                 <button>X</button>
             </li>
-
         </ul>
 
-
-        <p>3 items left</p>
-        <p>Clear Completed</p>
+        <div class="footer">
+            <div class="footer-left">
+                <p>3 items left</p>
+            </div>
+            <div class="footer-right">
+                <button>Clear Completed</button>
+            </div>
+        </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
