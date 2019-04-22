@@ -1,147 +1,154 @@
 body {
-    font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
 }
 
 .wrap {
-    background-color: white;
-    padding: 100px;
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2)
+  background-color: white;
+  padding: 100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
 }
 
 .header {
-    display: flex;
-    margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 30px;
 }
 
 h1 {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 44px;
-    letter-spacing: 1px;
-    color: #30305d;
-    font-weight: 400;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 44px;
+  letter-spacing: 1px;
+  color: #30305d;
+  font-weight: 400;
 }
 
 .header-right {
-    text-align: right;
-    flex: 1 1 auto;
+  text-align: right;
+  flex: 1 1 auto;
 }
 
 .header button {
-    border: 2px solid transparent;
-    font-size: 23px;
-    padding: 10px 15px;
-    font-weight: 300;
-    color: #777;
+  border: 2px solid transparent;
+  font-size: 23px;
+  padding: 10px 15px;
+  font-weight: 300;
+  color: #777;
 }
 
 .header button:hover {
-    border-color: #b9b9e9;
-    border-radius: 5px;
+  border-color: #b9b9e9;
+  border-radius: 5px;
 }
 
 form {
-    margin-bottom: 30px;
-    border-bottom: 2px solid #ebebeb;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ebebeb;
 }
 
 form input {
-    height: 47px;
-    border: 0px;
-    font-size: 22px;
-    width: 400px;
-    padding-bottom: 11px;
+  height: 47px;
+  border: 0px;
+  font-size: 22px;
+  width: 400px;
+  padding-bottom: 11px;
 }
 
 .add-button {
-    border: none;
-    border-radius: 100%;
-    background: #2e2d5a;
-    color: white;
-    font-size: 40px;
-    line-height: 29px;
-    width: 36px;
-    padding: 0px;
-    padding-bottom: 7px;
-    font-weight: 200;
-    float: right;
+  border: none;
+  border-radius: 100%;
+  background: #2e2d5a;
+  color: white;
+  font-size: 40px;
+  line-height: 29px;
+  width: 36px;
+  padding: 0px;
+  padding-bottom: 7px;
+  font-weight: 200;
+  float: right;
 }
 
-
 ul {
-    list-style: none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 
 li {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #ebebeb;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ebebeb;
 }
 
 li span {
-    display: block;
-    line-height: 30px;
+  display: block;
+  line-height: 30px;
+}
+
+li.checked span {
+  text-decoration: line-through;
 }
 
 .delete-button {
-    border: 0;
-    float: right;
-    font-size: 30px;
-    line-height: 30px;
-    width: 30px;
-    color: #db8583;
-    font-weight: 200;
-    padding: 0;
+  border: 0;
+  float: right;
+  font-size: 30px;
+  line-height: 30px;
+  width: 30px;
+  color: #db8583;
+  font-weight: 200;
+  padding: 0;
 }
 
 .check-button {
-    border: 0px;
-    border-radius: 100%;
-    background-color: #95cf69;
-    font-size: 30px;
-    line-height: 30px;
-    width: 30px;
-    color: white;
-    padding: 0;
-    font-weight: 200;
-    float: left;
-    margin-right: 15px;
+  border: 0px;
+  border-radius: 100%;
+  font-size: 30px;
+  line-height: 30px;
+  width: 30px;
+  color: white;
+  padding: 0;
+  font-weight: 200;
+  float: left;
+  margin-right: 15px;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+li.checked .check-button {
+  background-color: #95cf69;
 }
 
 .footer {
-    display: flex;
-    margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 30px;
 }
 
 .footer-left {
-    display: block;
-    height: 47px;
-    border: 0px;
-    font-size: 22px;
-    width: 400px;
-    padding-bottom: 11px;
-    color: #777
+  display: block;
+  height: 47px;
+  border: 0px;
+  font-size: 22px;
+  width: 400px;
+  padding-bottom: 11px;
+  color: #777;
 }
 
 .footer-right {
-    text-align: right;
-    flex: 1 1 auto;
+  text-align: right;
+  flex: 1 1 auto;
 }
 
 .clear-button {
-    border: 2px solid transparent;
-    font-size: 23px;
-    padding: 10px 15px;
-    font-weight: 300;
-    color: #777;
+  border: 2px solid transparent;
+  font-size: 23px;
+  padding: 10px 15px;
+  font-weight: 300;
+  color: #777;
 }
 
 .footer button:hover {
-    border-color: #b9b9e9;
-    border-radius: 5px;
+  border-color: #b9b9e9;
+  border-radius: 5px;
 }

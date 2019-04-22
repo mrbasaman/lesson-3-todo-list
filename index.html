@@ -1,57 +1,39 @@
 <html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Todo List</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrap">
-        <div class="header">
-            <div class="header-left">
-                <h1>Todo List</h1>
-            </div>
-            <div class="header-right">
-                <button>All</button>
-                <button>Active</button>
-                <button>Completed</button>
-            </div>
+      <div class="header">
+        <div class="header-left">
+          <h1>Todo List</h1>
         </div>
-
-        <form>
-            <input type="text" placeholder="What needs to be done?">
-            <button class="add-button">+</button>
-        </form>
-
-        <ul>
-            <li>
-                <button class="check-button">&#10003;</button>
-                <button class="delete-button">&times;</button>
-                <span>Laundry</span>
-            </li>
-            <li>
-                <button class="check-button">&#10003;</button>
-                <button class="delete-button">&times;</button>
-                <span>Laundry</span>
-            </li>
-            <li>
-                <button class="check-button">&#10003;</button>
-                <button class="delete-button">&times;</button>
-                <span>Laundry</span>
-            </li>
-        </ul>
-
-        <div class="footer">
-            <div class="footer-left">
-                <p>3 items left</p>
-            </div>
-            <div class="footer-right">
-                <button class="clear-button">Clear Completed</button>
-            </div>
+        <div class="header-right">
+          <button>All</button>
+          <button>Active</button>
+          <button>Completed</button>
         </div>
+      </div>
+
+      <form>
+        <input type="text" placeholder="What needs to be done?" />
+        <button type="submit" class="add-button">+</button>
+      </form>
+
+      <ul></ul>
+
+      <div class="footer">
+        <div class="footer-left">
+          <p>3 items left</p>
+        </div>
+        <div class="footer-right">
+          <button class="clear-button">Clear Completed</button>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
