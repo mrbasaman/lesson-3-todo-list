@@ -3,6 +3,8 @@ const input = document.querySelector("form input");
 const form = document.querySelector("form");
 const clear = document.querySelector(".clear-button");
 const ul = document.querySelector('ul');
+const completed = document.querySelector(".complete-button");
+const removeAll = document.querySelector(".refresh-button");
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -50,5 +52,17 @@ clear.addEventListener('click', function () {
     const allCompleted = document.querySelectorAll('li.checked')
     allCompleted.forEach(function (li) {
         li.remove();
+    })
+})
+completed.addEventListener('click', function () {
+    const completeAll = document.querySelectorAll('li')
+    completeAll.forEach(function (li) {
+        li.classList.toggle('checked')
+    })
+})
+removeAll.addEventListener('click', function () {
+    const remove = document.querySelectorAll('li')
+    remove.forEach(function (li) {
+        li.remove()
     })
 })
