@@ -39,6 +39,7 @@ h1 {
   color: #777;
 }
 
+.header button.active,
 .header button:hover {
   border-color: #b9b9e9;
   border-radius: 5px;
@@ -75,6 +76,20 @@ ul {
   list-style: none;
   padding: 0px;
 }
+
+ul.only-active li.checked {
+  display: none;
+}
+
+ul.only-completed li:not(.checked) {
+  display: none;
+}
+/* ul.only-completed li {
+  display: none;
+}
+ul.only-completed li.checked {
+  display: block;
+} */
 
 li {
   margin-bottom: 15px;

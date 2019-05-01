@@ -5,6 +5,37 @@ const clear = document.querySelector(".clear-button");
 const ul = document.querySelector('ul');
 const completed = document.querySelector(".complete-button");
 const removeAll = document.querySelector(".refresh-button");
+const buttonAll = document.querySelector(".show-all");
+const buttonActive = document.querySelector(".show-active");
+const buttonCompleted = document.querySelector(".show-completed");
+
+
+buttonAll.addEventListener('click', function () {
+    buttonAll.classList.add('active')
+    buttonActive.classList.remove('active')
+    buttonCompleted.classList.remove('active')
+    ul.classList.remove('only-active')
+    ul.classList.remove('only-completed')
+
+})
+
+buttonActive.addEventListener('click', function () {
+    buttonAll.classList.remove('active')
+    buttonActive.classList.add('active')
+    buttonCompleted.classList.remove('active')
+    ul.classList.add('only-active')
+    ul.classList.remove('only-completed')
+
+})
+
+buttonCompleted.addEventListener('click', function () {
+    buttonAll.classList.remove('active')
+    buttonActive.classList.remove('active')
+    buttonCompleted.classList.add('active')
+    ul.classList.remove('only-active')
+    ul.classList.add('only-completed')
+
+})
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
